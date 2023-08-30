@@ -1,1 +1,4 @@
-These is basically the guide needed for navigating tmux and i am also attaching some shell script command that make life easier for me
+
+
+Just going tp be giving some insights regarding the usage of tmux and how it can be perfectly enjoyed.
+Ranging from the most effective CMD and emphasis on gettign workflow faster.
