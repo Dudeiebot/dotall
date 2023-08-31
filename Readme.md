@@ -4,7 +4,7 @@
 
 - [Install tpm plugins](https://github.com/tmux-plugins/tpm/blob/master/README.md)
 
-Go through [noob guide]() for easy everyday cmd
+Go through [noob guide](https://github.com/Dudeiebot/dotall/blob/master/noob.md) for easy everyday cmd
 
 tmux.conf file is the file that we can use to configure our
 
