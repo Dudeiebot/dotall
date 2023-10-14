@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #used for splitting my window, when i open tmux new
-#You can crreate a shell script for calling these
+#You can create a shell script for calling these
 tmux split-window -v -p 25
 
 
