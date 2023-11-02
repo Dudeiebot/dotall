@@ -1,5 +1,7 @@
 
 ## INSTALLATION
+- [The nvim config](https://github.com/Dudeiebot/nvim.git) 
+
 - [Install tmux](https://github.com/tmux/tmux/wiki/Installing)
 
 - [Install tpm plugins](https://github.com/tmux-plugins/tpm/blob/master/README.md)
