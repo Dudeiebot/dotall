@@ -10,6 +10,8 @@ Go through [noob guide](https://github.com/Dudeiebot/dotall/blob/master/noob.md)
 
 Our tmux.conf File
 
+Our zshrc config File
+
 these.sh have some more config to make life easier in coding and getting et all, all the alias have there necessary comments.
 
 Email me if you need any help, i did help in putting you through.
