@@ -13,6 +13,7 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="/Users/Dudeshii/go/bin:$PATH"
 export PATH="/Users/Dudeshii/Library/Python/3.11/bin:$PATH"
+export PATH="/usr/local/mysql/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -115,6 +116,48 @@ alias python="python3"
 alias zshconfig="nvim ~/.zshrc"
 alias zshsource="source ~/.zshrc"
 alias cat="bat"
+alias pym="python3 manage.py"
+alias ppi="python3 -m pip install"
+alias pve="python3 -m venv env"
+alias sve="source env/bin/activate"
+alias preq="python3 -m pip freeze > requirements.txt"
+alias unfuck="git reset HEAD~1 --soft"
+alias gra="git remote add origin $1"
+
+alias_help() {
+    echo "Custom Aliases and Functions:"
+    echo "------------------------------"
+    echo "tat <session>     : Attach to a tmux session"
+    echo "dude              : List tmux sessions"
+    echo "fuck              : Correct previous console command (thefuck)"
+    echo "ls                : List directory contents in tree view (using lsd)"
+    echo "python            : Run Python 3"
+    echo "zshconfig         : Edit .zshrc file with nvim"
+    echo "zshsource         : Reload .zshrc file"
+    echo "cat               : Display file contents (using bat)"
+    echo "pym <command>     : Run Django manage.py commands"
+    echo "ppi <package>     : Install Python package : python3 -m pip install"
+    echo "pve               : Create a Python virtual environment named 'env : python3 -m venv env'"
+    echo "sve               : Activate the 'env' virtual environment"
+    echo "hgrep <term>      : Search command history for <term> using fzf"
+    echo "addpath <path>    : Export Path "
+    echo "preq              : Adding requirements to folder"
+    echo "unfuck            : Git reset 1"
+    echo "gra               : Git Remote Add Origin"
+    echo ""
+    echo "For more details, check your .zshrc file"
+}
+
+# Add an alias for the function if you want
+alias aliases="alias_help"
+
+hgrep() {
+  history | grep "$1" | fzf
+}
+
+addpath() {
+    export PATH="$1:$PATH"
+}
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
